@@ -200,6 +200,21 @@ svg path#heart {
   }
 }
 
+.romantic-text {
+  font-family: "Brush Script MT", cursive;
+  width: 90vw;
+  font-size: 1rem;
+  color: #ff6b81;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulseGlow 2s infinite;
+  text-shadow: 0 0 5px #ff6b81, 0 0 10px #ff6b81, 0 0 20px #ff6b81,
+    0 0 30px #ff6b81;
+}
+
 @media (max-width: 800px) {
   #cute-music-popup {
     font-size: 1em;
@@ -212,8 +227,11 @@ svg path#heart {
 }
 
 @media (max-width: 600px) {
+  .romantic-text {
+    bottom: 15%;
+  }
   .heart-line {
-    bottom: 10%;
+    bottom: 20%;
   }
   .photo-container {
     width: 90vw;
